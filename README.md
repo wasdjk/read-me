@@ -29,34 +29,37 @@
     7、提交截止时间：12月8日。
 实验过程
     在上次实验设计GUI窗体，支持学生注册、课程新加、学生选课、学生退课、打印学生选课等操作。
+    
 基于事件模型对业务逻辑编程，实现在界面上支持上述操作。针对操作过程中可能会出现的各种异
+
 常，做异常处理的基础上添加TXT文件的录入和读取操作，将文件的录入与读取操作写入stdulogin( )
+
 函数当中，建立一个File f写入TXT文件所在的位置，将输入GUI系统中的数据转化成String格式，再
+
 通过BufferedWriter输入到TXT文件中去，加上flush放着覆盖提前输入的数据，最后close（）关闭
+
 文件。之后在编写读取文件的代码，运用BufferedReader的方法读取TXT中的数据并输出数来，最后再
+
 添加上异常处理程序。
 流程图
 核心代码和注释
 public void actionPerformed(ActionEvent e) {            //事件判断
-
         if(e.getActionCommand()=="登录")  
         {  
              if(jrb2.isSelected()) //学生在登录系统  
             {           
-                 {
-					try {
+                 {try {
 						stulogin();
 					} catch (Exception e1) {
 						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}}
-				} 
-                  //连接到学生的方法 页面}
+				}   //连接到学生的方法 页面}
         }else if(e.getActionCommand()=="重置")  //清空界面
-        {  
-        	 clear();  
+        {  	 clear();  
         }             
         else if(e.getActionCommand()=="退出"){
+	
        	 dispose(); 						//关闭界面      
 }}
  Stu s=new Stu("26548","546","898",'5',"88");
