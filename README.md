@@ -1,6 +1,8 @@
 # read-me
 计181 2018310739 张学斌
 
+#综合性实验  学生选课系统设计
+
 ##实验目的
 
   分析学生选课系统
@@ -59,7 +61,7 @@
 ##流程图
 [![](https://github.com/wasdjk/read-me/blob/master/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)]
 
-核心代码和注释
+##核心代码和注释
 
 public void actionPerformed(ActionEvent e) {            //事件判断
 
@@ -86,10 +88,8 @@ public void actionPerformed(ActionEvent e) {            //事件判断
     	jt1.setText("姓名:"+jbf.getText()+"  密码:"+jpf.getText()+"\n"+"性别"+
     jcb.getSelectedItem()+"  课程:"+jtf.getText()+"\n"+"出生年月: "+jbb.getSelectedItem()
     +"年"+jbb1.getSelectedIndex()+"月"+"\n"+"所属院系:"+jrf.getText());       
-    	jt2.setText(s.toString());	
-	
-File f=new File("D:\\新建文件夹 (2).sss.txt");//确定写入TXT文件的存放位置
-
+    	jt2.setText(s.toString());		
+	File f=new File("D:\\新建文件夹 (2).sss.txt");//确定写入TXT文件的存放位置
       	BufferedWriter writer=null;
     	writer=new BufferedWriter(new FileWriter(f,true));//不覆盖原有文件进行输入
       	String str=jt1.getText();  //转换成String格式
@@ -110,9 +110,10 @@ File f=new File("D:\\新建文件夹 (2).sss.txt");//确定写入TXT文件的存
       		System.out.println("读取文件错误");//异常处理机制
       		e.printStackTrace();
 		
-系统运行截图
+##系统运行截图
 [![](https://github.com/wasdjk/read-me/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE.png)]
-三、编程感想
+
+##编程感想
 
     在本次实验是通过在上次实验设计GUI窗体，支持学生注册、课程新加、学生选课、学生退课、打印学生
     
