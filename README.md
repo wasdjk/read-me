@@ -14,6 +14,7 @@
   处理异常
   
 ##实验要求
+
   一、系统角色分析及类设计
   
     例如：学校有“人员”，分为“教师”和“学生”，教师教授“课程”，学生选择课程。
@@ -25,6 +26,7 @@
     以上属性仅为示例，同学们可以自行扩展。
     
   二、要求:
+  
     1、设计GUI窗体，支持学生注册、课程新加、学生选课、学生退课、打印学生选课列表等操作。
     
     2、基于事件模型对业务逻辑编程，实现在界面上支持上述操作。
@@ -56,7 +58,9 @@
 
 ##流程图
 [![](https://github.com/wasdjk/read-me/blob/master/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)]
+
 核心代码和注释
+
 public void actionPerformed(ActionEvent e) {            //事件判断
 
         if(e.getActionCommand()=="登录")  
@@ -105,8 +109,9 @@ File f=new File("D:\\新建文件夹 (2).sss.txt");//确定写入TXT文件的存
       	catch(Exception e) {
       		System.out.println("读取文件错误");//异常处理机制
       		e.printStackTrace();
+		
 系统运行截图
-
+[![](https://github.com/wasdjk/read-me/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE.png)]
 三、编程感想
 
     在本次实验是通过在上次实验设计GUI窗体，支持学生注册、课程新加、学生选课、学生退课、打印学生
